@@ -2,10 +2,10 @@ from django.shortcuts import render
 
 def index(request):
     context = {
-        "full_name": "Your Name",
-        "student_id": "12345678",
+        "full_name": "SMS",
+        "student_id": "120210278",
         "address": "Gaza, Palestine",
-        "email": "example@gmail.com",
-        "extra_info": "Any additional info you want"
+        "email": "SMS@gmail.com",
+        "extra_info": "Student in IUG"
     }
     return render(request, 'pages/index.html', context)
