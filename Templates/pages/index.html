@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Info</title>
+    <style>
+        body { font-family: Arial; max-width: 600px; margin: 40px auto; }
+        .card { padding: 20px; border: 1px solid #ccc; border-radius: 10px; }
+        h1 { text-align: center; }
+        
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>My Personal Information</h1>
+
+    <p><strong>Full Name:</strong> {{ full_name }}</p>
+    <p><strong>Student ID:</strong> {{ student_id }}</p>
+    <p><strong>Address:</strong> {{ address }}</p>
+
+    {% if email %}
+        <p><strong>Email:</strong> {{ email }}</p>
+    {% endif %}
+
+    <p><strong>Additional Info:</strong> {{ extra_info }}</p>
+</div>
+
+</body>
+</html>
